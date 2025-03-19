@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { FaBuilding, FaUser, FaKey, FaEye } from 'react-icons/fa';
 import { ILoginResponse } from './type';
 import { LuEyeClosed } from 'react-icons/lu';
-import { login } from '@/_components/services/post/login';
 import { message } from 'antd';
 import { useRouter } from 'next/navigation';
+import { login } from '../../../_components/services/post/login';
 
 
 export default function LoginPage() {
@@ -47,6 +47,7 @@ export default function LoginPage() {
 
     return (
         <div className="bg-gray-100 flex items-center justify-center min-h-screen">
+            
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
                 <div className="flex justify-center mb-6">
                     <div className="bg-purple-100 p-4 rounded-full">
